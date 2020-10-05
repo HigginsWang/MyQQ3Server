@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+package test;
+
+message C2S_LOGIN
+{
+	string account = 1;
+	string password = 2;
+}
+
+message S2C_LOGINRET
+{
+	//0表示登录成功，1表示无账号，2表示密码不正确
+	int32 = 1;
+}
+
